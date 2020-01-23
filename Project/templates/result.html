@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor = "00ffff">
+<div class = center>
+<h1 style="font-size:60px;color:blue;"> BADMINTON CHATBOT </h1>
+<img src = "../static/images/badminton.jpg" 
+         alt = "BADMINTON" height="500" width="500"  class="center">
+<br>
+<br>
+<b>
+<font size = 20>
+	नमस्कार ।<br>
+	आप कैसे है ?<br>
+	मैं हूँ बैडमिंटन चैम्प और मैं आपके बैडमिंटन से जुड़े सभी सवालों का उत्तर देने मैं सक्षम हूँ ।
+
+
+<form action = "http://localhost:5000/result" id = "ans" method = "POST">
+         <b><p>आप का सवाल?</b>
+ <input type = "text" name = "response" id = "ans1" /></p>
+       </form>
+<text id = "res">
+	{{ret}}
+</text>
+</b> 
+</font>
+</div>
+
+<style>	 
+.center {
+        text-align: center;
+
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+
+</body>
+</html>
